@@ -19,11 +19,11 @@ public class MathCalculator extends CordovaPlugin {
         //     this.coolMethod(message, callbackContext);
         //     return true;
         // }
-        if(action.equals('addMethod')){
+        if(action.equals("addMethod")){
             this.addMethod(args, callbackContext);
             return true;
         }
-        else if(action.equals('substractMethod')){
+        else if(action.equals("substractMethod")){
             this.substractMethod(args, callbackContext);
             return true;
         }
@@ -41,28 +41,28 @@ public class MathCalculator extends CordovaPlugin {
     private void addMethod(JSONArray args, CallbackContext callbackContext) {
         if(args != null) {
             try{
-                int p1 = Integer.parseInt(args.getJSONObject(0).getString('param1'));
-                int p2 = Integer.parseInt(args.getJSONObject(0).getString('param2'));
+                int p1 = Integer.parseInt(args.getJSONObject(0).getString("param1"));
+                int p2 = Integer.parseInt(args.getJSONObject(0).getString("param2"));
                 callbackContext.success("" + (p1 + p2));
             }catch (Exeption ex){
-                callbackContext.error('Something went wrong ' + ex);
+                callbackContext.error("Something went wrong " + ex);
             }
         } else {
-            callbackContext.error('Value is null, please enter a value');
+            callbackContext.error("Value is null, please enter a value.");
         }
     }
 
     private void substractMethod(JSONArray args, CallbackContext callbackContext) {
         if(args != null) {
             try{
-                int p1 = Integer.parseInt(args.getJSONObject(0).getString('param1'));
-                int p2 = Integer.parseInt(args.getJSONObject(0).getString('param2'));
+                int p1 = Integer.parseInt(args.getJSONObject(0).getString("param1"));
+                int p2 = Integer.parseInt(args.getJSONObject(0).getString("param2"));
                 callbackContext.success("" + (p1 - p2));
             }catch (Exeption ex){
-                callbackContext.error('Something went wrong ' + ex);
+                callbackContext.error("Something went wrong " + ex);
             }
         } else {
-            callbackContext.error('Value is null, please enter a value');
+            callbackContext.error("Value is null, please enter a value.");
         }
     }
 }
