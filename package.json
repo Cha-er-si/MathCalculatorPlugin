@@ -1,0 +1,18 @@
+{
+  "name": "mathcalculator",
+  "version": "1.0.0",
+  "description": "This is Math Calculator, an example of cordova plugin by Jayesh Lahare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Math",
+    "Calculator",
+    "Ionic",
+    "Cordova",
+    "Plugin"
+  ],
+  "author": "Prince Charles Velarde",
+  "license": "ISC"
+}
