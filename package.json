@@ -14,5 +14,9 @@
     "Plugin"
   ],
   "author": "Prince Charles Velarde",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cha-er-si/MathCalculatorPlugin.git"
+  }
 }
